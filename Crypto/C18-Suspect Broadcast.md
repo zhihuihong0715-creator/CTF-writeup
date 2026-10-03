@@ -6,7 +6,7 @@
 **Flag format:** `cyberspectre{v1g3n3r3_1s_a_cl4ss1c_c1ph3r}`
 
 ## Challenge
-![alt text](<Screenshot 2026-09-22 121133.png>)
+![alt text](<C18-suspect broadcast.png>)
 The file has four separate "transmissions," each with its own protocol tag:
 
 1. `ROT-v3` — `qeb{nrfzh_yoltk_clu}`
