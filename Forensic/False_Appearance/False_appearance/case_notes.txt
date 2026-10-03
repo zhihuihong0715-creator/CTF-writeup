@@ -1,0 +1,5 @@
+CASE NOTE 7B
+
+The recovery workstation preserved names inconsistently.
+One item was rejected by an image viewer. Compare what the suffix claims
+with what the file signature and content actually say.

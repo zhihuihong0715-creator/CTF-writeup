@@ -1,0 +1,44 @@
+[TRANSMISSION HEADER]
+
+Sender: Op_Master
+Protocol: ROT-v3
+Key_Hint: "The answer is closer than you think."
+
+[PAYLOAD]
+qeb{nrfzh_yoltk_clu}
+
+[TRANSMISSION END]
+
+[TRANSMISSION HEADER]
+
+Sender: Op_Master
+Protocol: HEX-v1
+Key_Hint: "Not every message was meant to be understood."
+
+[PAYLOAD]
+4e4f5f414354494f4e5f52455155495245447b4e4f57484552457d
+
+[TRANSMISSION END]
+
+
+[TRANSMISSION HEADER]
+
+Sender: Op_Master
+Protocol: VIG-v2
+Key_Hint: "Look at what all our flags have in common"
+Checksum: 7F-3A-91
+
+[PAYLOAD]
+ewciikeiemii{x1e3o3v3_1j_s_rp4ul1t_g1rf3s}
+
+[TRANSMISSION]
+
+[TRANSMISSION HEADER]
+Sender: Op_Master
+Protocol: B64-v1
+Key_Hint: "Some things are easier to read backwards."
+
+[PAYLOAD]
+Q0xFQVJFRF9GT1JfTk9XezIwMjZ9
+
+[TRANSMISSION END]

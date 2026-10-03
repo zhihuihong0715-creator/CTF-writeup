@@ -1,0 +1,16 @@
+CASE REF: CSI-2026-0417
+SUBJECT: Daniel Mercer, Access Administrator, Infrastructure
+STATUS: Unaccounted for since Tuesday. Voluntary absence not confirmed.
+
+Mercer held full administrative access to the employee directory, badge
+system, and zone provisioning for the entire company. His terminal was
+flagged before it could be wiped and reissued.
+
+The files in this package are the subset of recovered workstation data
+that Forensics assessed as potentially relevant to his disappearance.
+Additional material was recovered but judged non-relevant and has not
+been included here.
+
+Nothing in this package has been altered. Analyze at your discretion.
+
+- CyberSecure Incident Response

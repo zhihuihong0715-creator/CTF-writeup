@@ -1,0 +1,80 @@
+# RECOVERY MANIFEST
+
+Manifest ID: RM-2026-0817
+System: archive-01
+Created: 2026-08-17 03:22:14
+Status: VERIFIED
+
+## RESTORE ROOT
+
+/srv/archive/
+
+## DIRECTORIES
+
+/srv/archive/
+/srv/archive/old/
+/srv/archive/reports/
+/srv/archive/logs/
+/srv/archive/backup/
+
+## FILES
+
+incident_report.txt
+system_backup.log
+access_records.txt
+operation_notes.txt
+recovery_manifest.txt
+
+## FILE STATUS
+
+incident_report.txt       VERIFIED
+system_backup.log         VERIFIED
+access_records.txt        VERIFIED
+operation_notes.txt       VERIFIED
+recovery_manifest.txt     VERIFIED
+
+## ARCHIVE CHECKSUMS
+
+archive-2026-08-17.tar
+SHA256:
+f1a92c73d881a4b27e31f9c6a702d44e
+
+## CONFIGURATION
+
+Owner: archive
+Group: operations
+Permissions: 0750
+
+## RESTORE PROCEDURE
+
+1. Mount the recovery volume.
+2. Verify the archive checksum.
+3. Extract the archive into the designated recovery directory.
+4. Verify file ownership.
+5. Verify permissions.
+6. Compare recovered files against the manifest.
+7. Start the archive service.
+8. Confirm logging functionality.
+9. Perform a read-only integrity check.
+10. Return the system to normal operation.
+
+## WARNINGS
+
+Do not overwrite newer files without confirmation.
+
+Do not restore files from an unverified archive.
+
+Do not modify the original recovery manifest.
+
+If checksum verification fails, stop the restoration process immediately.
+
+## FINAL VERIFICATION
+
+Archive integrity: PASS
+File count: 5
+Directory count: 5
+Permission check: PASS
+Checksum verification: PASS
+Recovery status: READY
+
+END OF MANIFEST

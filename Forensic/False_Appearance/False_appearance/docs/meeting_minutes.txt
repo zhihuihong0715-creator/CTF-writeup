@@ -1,0 +1,5 @@
+MINUTES — STORAGE MIGRATION CHECK-IN
+1. Preserve original names where possible.
+2. The photo export was not opened because the viewer rejected one item.
+3. Keep the small cache files with the case, even if they look unimportant.
+4. Closeout owner: M. Chen

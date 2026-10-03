@@ -1,0 +1,67 @@
+# ACCESS CONTROL RECORDS
+
+System: archive-01
+Log source: sshd
+Review period: 2026-08-16 - 2026-08-17
+
+[2026-08-16 18:02:11] LOGIN SUCCESS user=archive
+source=10.14.4.12 method=password
+
+[2026-08-16 18:47:32] LOGIN SUCCESS user=backup
+source=10.14.4.18 method=key
+
+[2026-08-16 19:03:44] LOGIN FAILED user=admin
+source=10.14.7.23 reason=invalid_password
+
+[2026-08-16 19:03:49] LOGIN FAILED user=admin
+source=10.14.7.23 reason=invalid_password
+
+[2026-08-16 19:04:01] LOGIN FAILED user=admin
+source=10.14.7.23 reason=invalid_password
+
+[2026-08-16 19:05:13] LOGIN SUCCESS user=archive
+source=10.14.7.23 method=password
+
+[2026-08-16 19:05:18] SESSION OPEN user=archive
+pid=4821
+
+[2026-08-16 19:07:44] DIRECTORY ACCESS user=archive
+path=/srv/archive/
+
+[2026-08-16 19:08:02] DIRECTORY ACCESS user=archive
+path=/srv/archive/old/
+
+[2026-08-16 19:08:15] FILE READ user=archive
+file=incident_report.txt
+
+[2026-08-16 19:08:19] FILE READ user=archive
+file=system_backup.log
+
+[2026-08-16 19:08:27] FILE READ user=archive
+file=operation_notes.txt
+
+[2026-08-16 19:08:31] FILE READ user=archive
+file=recovery_manifest.txt
+
+[2026-08-16 19:09:01] COMMAND user=archive
+command="ls"
+
+[2026-08-16 19:09:04] COMMAND user=archive
+command="find . -type f"
+
+[2026-08-16 19:09:17] COMMAND user=archive
+command="cat operation_notes.txt"
+
+[2026-08-16 19:10:02] SESSION CLOSE user=archive
+
+## REVIEW NOTES
+
+Several authentication failures preceded a successful login.
+
+The source address 10.14.7.23 appears in multiple records.
+
+No privileged commands were recorded during the session.
+
+The account archive has read access to the archive directory.
+
+END OF RECORD

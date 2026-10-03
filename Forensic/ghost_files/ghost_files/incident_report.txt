@@ -1,0 +1,75 @@
+# INCIDENT RESPONSE REPORT
+
+Incident ID: IR-2047
+Classification: INTERNAL
+Status: CLOSED
+Date: 2026-08-17
+
+## SUMMARY
+
+Anomalous activity was detected on the archive server during the early hours
+of 17 August. Multiple authentication attempts were recorded against the
+maintenance account.
+
+The initial investigation did not identify evidence of data exfiltration.
+The affected system was isolated while access records were reviewed.
+
+## TIMELINE
+
+02:11:04 - Failed SSH authentication from 10.14.7.23
+02:11:17 - Failed SSH authentication from 10.14.7.23
+02:12:01 - Successful authentication from 10.14.7.23
+02:12:44 - User accessed /srv/archive/
+02:14:09 - User enumerated directory contents
+02:16:31 - Archive process started
+02:19:52 - Session terminated
+02:21:03 - Backup service resumed
+
+## AFFECTED SYSTEMS
+
+archive-01
+backup-02
+logstore-01
+
+## REVIEWED DIRECTORIES
+
+/srv/archive/
+/srv/archive/old/
+/srv/archive/backup/
+/var/log/auth.log
+/var/log/syslog
+/home/archive/
+/opt/maintenance/
+
+## INVESTIGATION NOTES
+
+The archive directory contained several historical reports and system
+records. Investigators were unable to determine whether the directory
+contents had been accessed before the maintenance session ended.
+
+No confirmed evidence of credential theft was found.
+
+The following files were reviewed:
+
+system_backup.log
+access_records.txt
+operation_notes.txt
+recovery_manifest.txt
+
+No suspicious executable files were identified.
+
+## RECOMMENDATIONS
+
+1. Rotate maintenance credentials.
+2. Review SSH access controls.
+3. Disable unused accounts.
+4. Audit hidden files within archived directories.
+5. Preserve the original archive for further investigation.
+
+## FINAL STATUS
+
+The incident was classified as LOW severity.
+
+Report prepared by:
+Security Operations
+Archive Review Team

@@ -1,0 +1,12 @@
+From: it-helpdesk@northstar.example
+To: archive-team@northstar.example
+Subject: Re: drive 7B inventory
+
+The old drive has been catalogued. The image folder may contain camera exports.
+Please do not trust filenames copied from the recovery workstation.
+
+From: maya.chen@northstar.example
+To: archive-team@northstar.example
+Subject: Re: missing thumbnails
+
+The thumbnail service was disabled before the final backup. Nothing urgent.

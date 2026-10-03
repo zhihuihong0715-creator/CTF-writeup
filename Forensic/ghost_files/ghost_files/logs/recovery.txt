@@ -1,0 +1,12 @@
+RECOVERY LOG
+============
+
+Recovery process completed.
+
+Primary file restored successfully.
+Additional metadata was not recovered.
+
+The original data may still exist outside the file's
+visible contents.
+
+Do not modify the recovery file.
